@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #fdc8b4, #f77a7a); /* Peachy pink to deep rose */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header span {
+    color: #fff9c4;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-gallery h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Image Styles */
+.images img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;  /* Circle border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    object-position: 50% 20%; /* Focus on the face area */
+}
+
+.images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heartfelt Message Section */
+.birthday-message {
+    text-align: center;
+    background-color: rgba(255, 188, 204, 0.6); /* Soft pink with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.birthday-message h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.birthday-message p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .birthday-message h2 {
+        font-size: 1.8em;
+    }
+
+    .birthday-message p {
+        font-size: 1.1em;
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #f8bbd0, #f06292);  /* Light pinkish-red gradient */
+    color: #fff;  /* White text */
+    font-size: 1.1rem;
+    border-radius: 8px;
+    width: 100%;  /* Full-width footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+#your-name {
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
