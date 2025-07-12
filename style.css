@@ -1,12 +1,11 @@
 /* General Styles */
 body {
-    background: linear-gradient(to right, #fdc8b4, #f77a7a); /* Peachy pink to deep rose */
+    background: linear-gradient(to right, #a8edea, #5ee7df);
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #044d40; /* <-- Changed from white */
 }
-
 
 
 .container {
@@ -29,7 +28,7 @@ header h1 {
 }
 
 header span {
-    color: #fff9c4;
+    color: #e0fff6; /* Soft mint green highlight */
     font-weight: 700;
 }
 
@@ -38,7 +37,7 @@ header p {
     margin-top: 10px;
 }
 
-/* Image Gallery Section */
+/* Image Gallery Section (Used for Emojis now) */
 .image-gallery {
     text-align: center;
     margin-bottom: 40px;
@@ -55,36 +54,35 @@ header p {
 .images {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     animation: fadeIn 2s ease-out;
 }
 
-/* Image Styles */
-.images img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;  /* Circle border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.4s ease;
-    object-position: 50% 20%; /* Focus on the face area */
+.emoji-box {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #044d40;
 }
 
-.images img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+.emoji-box:hover {
+    transform: scale(1.05);
 }
 
 /* Heartfelt Message Section */
 .birthday-message {
     text-align: center;
-    background-color: rgba(255, 188, 204, 0.6); /* Soft pink with transparency */
+    background-color: rgba(174, 255, 219, 0.6); /* Soft mint green with transparency */
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 .birthday-message h2 {
     font-size: 2.2em;
@@ -113,6 +111,7 @@ header p {
     }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .images {
         flex-direction: column;
@@ -137,11 +136,11 @@ footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px 0;
-    background: linear-gradient(135deg, #f8bbd0, #f06292);  /* Light pinkish-red gradient */
-    color: #fff;  /* White text */
+    background: linear-gradient(135deg, #a2ded0, #50c9c3); /* Greenish turquoise footer */
+    color: #044d40;
     font-size: 1.1rem;
     border-radius: 8px;
-    width: 100%;  /* Full-width footer */
+    width: 100%;
 }
 
 footer p {
@@ -153,6 +152,3 @@ footer p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
 }
-
-
-
